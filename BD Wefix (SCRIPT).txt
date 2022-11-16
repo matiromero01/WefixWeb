@@ -25,7 +25,7 @@ CREATE TABLE USUARIOS
 (
 	idUsuario INT IDENTITY(1,1),
 	usuario VARCHAR(20),
-	contraseña VARCHAR(20)
+	contraseÃ±a VARCHAR(20)
 	CONSTRAINT pkUSUARIOS PRIMARY KEY(idUsuario)
 )
 
@@ -88,9 +88,10 @@ CREATE TABLE ORDENES
 	idEstadoReparacion INT,
 	modelo VARCHAR(50),
 	problema VARCHAR(200),
-	contraseña VARCHAR(30),
+	contraseÃ±a VARCHAR(30),
 	notas VARCHAR(50),
-	costo decimal(18,0)
+	costo decimal(18,0),
+	fecha VARCHAR(20)
 
 	CONSTRAINT pkOREDENES PRIMARY KEY(cod_orden_id),
 
